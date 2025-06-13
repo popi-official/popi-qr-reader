@@ -3,6 +3,10 @@ node_modules
 
 # logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
 
 # next.js
 .next
@@ -11,3 +15,43 @@ next-env.d.ts
 # build
 /app
 dist
+out
+
+# Electron
+release
+build
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Cache
+.eslintcache
+.parcel-cache
+.cache
+
+# Coverage
+coverage/
+
+# Temporary
+*.tmp
+*.temp
