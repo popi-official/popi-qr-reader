@@ -1,4 +1,5 @@
 import { contextBridge, ipcRenderer, IpcRendererEvent } from "electron";
+import { PostEntryRequest } from "../renderer/types/ApiRequest";
 
 const handler = {
   send(channel: string, value: unknown) {
@@ -13,6 +14,8 @@ const handler = {
       ipcRenderer.removeListener(channel, subscription);
     };
   },
+
+  postEntry: (data: PostEntryRequest) => ipcRenderer.invoke("post-entry", data),
 };
 
 contextBridge.exposeInMainWorld("ipc", handler);

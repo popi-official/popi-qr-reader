@@ -1,7 +1,8 @@
 import path from "path";
-import { app, ipcMain } from "electron";
+import { app, session } from "electron";
 import serve from "electron-serve";
 import { createWindow } from "./helpers";
+import { registerHomeHandlers } from "./Home";
 
 const isProd = process.env.NODE_ENV === "production";
 
@@ -19,8 +20,22 @@ if (isProd) {
     height: 600,
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
+      nodeIntegration: false,
+      contextIsolation: true,
     },
   });
+
+  session.defaultSession.setPermissionRequestHandler(
+    (webContents, permission, callback) => {
+      if (permission === "media") {
+        callback(true);
+      } else {
+        callback(false);
+      }
+    }
+  );
+
+  registerHomeHandlers();
 
   if (isProd) {
     await mainWindow.loadURL("app://./home");
@@ -33,8 +48,4 @@ if (isProd) {
 
 app.on("window-all-closed", () => {
   app.quit();
-});
-
-ipcMain.on("message", async (event, arg) => {
-  event.reply("message", `${arg} World!`);
 });
