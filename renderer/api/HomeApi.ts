@@ -1,13 +1,12 @@
 import { PostEntryRequest } from "@/types/ApiRequest";
-import { api } from "./config/Axios";
-import { ApiResponse, NoResponse } from "@/types/ApiResponse";
 
 export const postEntry = async (request: PostEntryRequest) => {
-  const response = await api.post<ApiResponse<NoResponse>>(
-    `/reservations/entrance?popupId=${request.popupId}`,
-    {
-      request,
-    }
-  );
-  return response.data;
+  const result = await window.ipc.postEntry(request);
+
+  if (!result.success) {
+    console.error("IPC 에러:", result.error);
+    throw new Error(result.error);
+  }
+  console.log("IPC 성공:", result.data);
+  return result.data;
 };
