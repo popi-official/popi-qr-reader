@@ -14,15 +14,11 @@
 
 #### 개발 환경 - <img src="https://img.shields.io/badge/Nextron-000000?style=for-the-social&logo=next.js&logoColor=white">
 
-#### UI 컴포넌트 및 디자인 - <img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?style=for-the-social&logo=tailwindcss&logoColor=white"> <img src="https://img.shields.io/badge/Framer Motion-0055FF?style=for-the-social&logo=framer&logoColor=white"> <img src="https://img.shields.io/badge/Lucide React-F56565?style=for-the-social&logo=lucide&logoColor=white">
+#### UI 컴포넌트 및 디자인 - <img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?style=for-the-social&logo=tailwindcss&logoColor=white"> <img src="https://img.shields.io/badge/Framer Motion-0055FF?style=for-the-social&logo=framer&logoColor=white">
 
 #### 상태 관리 및 API 통신 - <img src="https://img.shields.io/badge/Zustand-2D3748?style=for-the-social&logo=react&logoColor=white"> <img src="https://img.shields.io/badge/React Query-FF4154?style=for-the-social&logo=reactquery&logoColor=white"> <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-social&logo=axios&logoColor=white">
 
 #### QR 스캐닝 - <img src="https://img.shields.io/badge/QR Scanner-2D3748?style=for-the-social&logo=qrcode&logoColor=white">
-
-#### 데이터 시각화 - <img src="https://img.shields.io/badge/Recharts-8884D8?style=for-the-social&logo=chart.js&logoColor=white">
-
-#### 데이터 저장 - <img src="https://img.shields.io/badge/Electron Store-47848F?style=for-the-social&logo=electron&logoColor=white">
 
 #### 개발 생산성 및 품질 관리 - <img src="https://img.shields.io/badge/ESLint-4B32C3?style=for-the-social&logo=eslint&logoColor=white"> <img src="https://img.shields.io/badge/Prettier-F7B93E?style=for-the-social&logo=prettier&logoColor=black">
 
