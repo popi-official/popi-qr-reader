@@ -3,6 +3,8 @@ import { PostEntryRequest } from "@/types/ApiRequest";
 export const postEntry = async (request: PostEntryRequest) => {
   const result = await window.ipc.postEntry(request);
 
+  console.log("result : ", result);
+
   if (!result.success) {
     console.error("IPC 에러:", result.error);
     throw new Error(result.error);
