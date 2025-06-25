@@ -2,6 +2,10 @@
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/popi-official/popi-manager-server?style=social) </br></br>
 
+### 📱 무인 팝업스토어 전용 QR 리더기 데스크톱 앱
+
+PoP! 무인 팝업스토어 운영을 위한 QR 코드 스캐너 데스크톱 애플리케이션입니다.
+
 ### 🖥️ Tech Stack
 
 #### 핵심 기술 - <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-social&logo=next.js&logoColor=white"> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-social&logo=typescript&logoColor=white"> <img src="https://img.shields.io/badge/Electron-47848F?style=for-the-social&logo=electron&logoColor=white">
