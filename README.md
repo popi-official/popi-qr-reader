@@ -1,12 +1,6 @@
 # PoP! <img src="https://github.com/ht3064/readme-image/blob/main/popi-server/app-logo.png" align="left" width="100"></a>
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdepromeet%2Fpopi-qr-reader&count_bg=%2328DBE6&title_bg=%232D3540&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com) [![Github Action](https://github.com/popi-official/popi-qr-reader/actions/workflows/coverage.yml/badge.svg)](https://github.com/popi-official/popi-qr-reader/actions)
-
-## 💁‍♂️ Introduction
-
-![intro-main]()
-
-![intro-description]() ![home]() ![let's-go]()
+![GitHub Repo stars](https://img.shields.io/github/stars/popi-official/popi-manager-server?style=social) </br></br>
 
 ### 🖥️ Tech Stack
 
