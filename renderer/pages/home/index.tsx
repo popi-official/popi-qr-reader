@@ -3,11 +3,13 @@ import DefaultLayout from "@/components/DefaultLayout";
 import { useEntryApi } from "@/hooks/@queries/useEntryApi";
 import { PostEntryRequest } from "@/types/ApiRequest";
 import { clearInterval, setInterval, setTimeout } from "timers";
+import { useRouter } from "next/router";
 
 export default function HomePage() {
   const [reservationQR, setReservationQR] = useState<PostEntryRequest | null>(
     null
   );
+  const router = useRouter();
   const [inputValue, setInputValue] = useState<string>("");
   const { mutation } = useEntryApi();
   const inputRef = useRef(null);
@@ -25,11 +27,11 @@ export default function HomePage() {
     return () => clearInterval(focusInterval);
   }, []);
 
-  useEffect(() => {
-    if (reservationQR && !mutation.isPending) {
-      mutation.mutate(reservationQR);
-    }
-  }, [reservationQR]);
+  // useEffect(() => {
+  //   if (reservationQR && !mutation.isPending) {
+  //     mutation.mutate(reservationQR);
+  //   }
+  // }, [reservationQR]);
 
   const handleQRInput = (value: string) => {
     if (!value.trim()) {
@@ -43,6 +45,13 @@ export default function HomePage() {
       console.error("QR 파싱 실패:", error);
     }
   };
+
+  useEffect(() => {
+    console.log(reservationQR);
+    if (reservationQR) {
+      router.push("/success");
+    }
+  }, [reservationQR]);
 
   return (
     <>
